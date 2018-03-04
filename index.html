@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Periodontal Disease</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="./d3/d3.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+     </head>
+     
+     <body>
+         <nav>
+             <div id="nav-title">
+                 <p>
+                     <a href="index.html"><img src="./images/nav_title.png"/></a>
+                 </p>
+             </div>
+             
+             <ul>
+                 <li><a href="#frame-top" id="scroll1">다빈도 질병 TOP5</a></li>
+                        <script>
+                        jQuery(document).ready(function($) {
+                                $("#scroll1").click(function(event){            
+                                        event.preventDefault();
+                                        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+                                });
+                        });
+                        </script>
+                 <li><a href="#frame-line" id="scroll2">치주질환이란?</a></li>
+                        <script>
+                        jQuery(document).ready(function($) {
+                                $("#scroll2").click(function(event){            
+                                        event.preventDefault();
+                                        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+                                });
+                        });
+                        </script>
+                 <li><a href="#frame-line2" id="scroll3">치주질환 통계</a></li>
+                        <script>
+                        jQuery(document).ready(function($) {
+                                $("#scroll3").click(function(event){            
+                                        event.preventDefault();
+                                        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+                                });
+                        });
+                        </script>
+                 <li><a href="#frame-line3" id="scroll4">치주질환 자가진단</a></li>
+                       <script>
+                        jQuery(document).ready(function($) {
+                                $("#scroll4").click(function(event){            
+                                        event.preventDefault();
+                                        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+                                });
+                        });
+                        </script>
+             </ul>
+         </nav>
+         
+          <header>
+                     <h3 class="header-title">다빈도 질병 '치주질환'</h3>
+                     <div class="header-main"><img src="./images/intro_title.png"/></div>
+                     <div class="intro-center"><img src="./images/intro_center.png"/></div>
+                     <a href="#frame-top" class="scroll"><div class="intro-center-button"><img src="./images/intro_center_button.png"/></div></a>
+
+                        <script>
+                        jQuery(document).ready(function($) {
+                                $(".scroll").click(function(event){            
+                                        event.preventDefault();
+                                        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+                                });
+                        });
+                        </script>
+          </header>
+         
+         <div id="frame">
+             <div id="tag">
+             <div class="tag_1"><img src="./images/tag_1.png"/></div>
+             <div class="tag_2"><img src="./images/tag_2.png"/></div>
+             <div class="tag_3"><img src="./images/tag_3.png"/></div>
+             <div class="tag_4"><img src="./images/tag_4.png"/></div>
+         </div>
+             <div class= "frame-paper">
+                  <div id="frame-top"><img src="./images/frame_top.png"/></div>
+                  <div class="frame-bigline"></div>
+                  <div class="title-1">
+                      <div class="title-1-img"><img src="./images/title_img.png"/></div>
+                      <p class="title-1-text">다빈도 질병 TOP5는 무엇일까요?</p>
+                  </div>
+                 
+              
+                 <div id="first-pie-graph1" class="items">
+                        <p class="graph-title">질병별 환자비율</p>
+                        <p class="graph-plus">단위 : %</p>
+                        <form> 
+                            <label><input type="radio" name="mode" value="dataA" /> 20 - 29세</label> 
+                            <label><input type="radio" name="mode" value="dataB" /> 30 - 39세</label> 
+                            <label><input type="radio" name="mode" value="dataC" /> 40 - 49세</label> 
+                            <label><input type="radio" name="mode" value="dataD" /> 50 - 59세</label> 
+                            <label><input type="radio" name="mode" value="dataE" /> 60 - 69세</label> 
+                        </form>
+                        <svg id="first-pie-graph1-svg" width="600" height="400"></svg>
+                  </div>
+                 
+                   
+            <div class="middle-text-box">
+               <div class="middle-img"><img src="./images/middle.png"/></div>
+               <p class="middle-text">성인 다빈도 질병 TOP5의 상위권 ‘치주질환’</p>
+            </div>
+             
+            <div id="frame-line"></div>
+            
+                 
+             <div class="title-2">
+                      <div id="title-2-img"><img src="./images/title_img.png"/></div>
+                      <p class="title-2-text">치주질환이 무엇일까요?</p>
+             </div>
+                 
+             <div class="title-2-content">
+                 <p class="title-2-content-1">치주질환 원인</p>
+                 <p class="title-2-content-1-2">제대로 된 칫솔질이 되지 않았을 경우가 대부분이다. 칫솔질이 올바르지 않고 규칙적이지 않다면 치아 사이에는 세균막(플라그)이나 치석이 끼게 된다. 이것들은 끊임없이 독성물질들을 뿜어내게 되고 결국 잇몸에 자극을 주어 염증을 일으키는 것이다.</p>
+                 
+                 <p class="title-2-content-2">치주질환 증상</p>
+                 
+                 <div class="title-2-content-2-2">
+                     <div class="content_1"><img src="./images/content_1.png"/>
+                         <h3>건강한 잇몸</h3>
+                         <p>잇몸의 색깔이 분홍빛이며<br>치아를 단단히 감싸고 있음</p>
+                         </div>
+                     <div class="content_2"><img src="./images/content_2.png"/>
+                         <h3>치은염</h3>
+                         <p>잇몸이 붉게 부어 있으며,<br>피가 나기 시작함</p>
+                     </div>
+                     <div class="content_3"><img src="./images/content_3.png"/>
+                         <h3>초기 치은염</h3>
+                         <p>잇몸과 치아가 벌어지며,<br>통증과 입냄새가 남</p>
+                     </div>
+                     <div class="content_4"><img src="./images/content_4.png"/>
+                         <h3>중기 이후 치주염</h3>
+                         <p>잇몸에서 고름이 나고 극심한 통증과 함께 치아가 흔들림</p>
+                     </div>
+                 
+                 </div>
+                 
+                 <p class="title-2-content-3">치주질환 예방법</p>
+                 <div class="title-2-content-3-2">
+                     <div class="title-2-content-3-img"><img src="./images/content_img.png"/></div>
+                     <h3 class="title-2-content-3-h3">식사후 30분이내 3분 이상</h3>
+                     <p class="title-2-content-3-p">깨끗이 칫솔질을 하여 구강 내에서 치태와 치석의 형태로<br>
+                        존재하는 세균을 없앤다면 심각한 치주질환은 피할 수 있을 것이다.</p>
+                 </div>
+                   
+             </div>
+                  <div id="frame-line2"></div>
+                  <div class="title-3">
+                      <div class="title-3-img"><img src="./images/title_img.png"/></div>
+                      <p class="title-3-text">치주질환 통계를 알아볼까요?</p>
+                  </div>
+            
+                 <div id="first-line-graph">
+                        <p class="graph-title">연도별 치주질환 요양급여비용총액</p>
+                        <p class="graph-plus">단위 : 천억원</p> 
+                        <svg id="first-line-graph-svg" width="900" height="250"></svg>
+                 </div>
+                 
+                 <div id="first-pie-graph">
+                        <p class="graph-title">연령별 치주질환 요양급여비용총액 비율</p>
+                        <p class="graph-plus">단위 : %</p> 
+                        <svg id="first-pie-graph-svg" width="900" height="380"></svg>
+                 </div>
+                 
+                 <div id="first-bar-graph">
+                        <p class="graph-title2">성별 치주질환 연령구간별 내원일수</p>
+                        <p class="graph-plus2">단위 : 일</p> 
+                        <svg id="first-bar-graph-svg" width="900" height="300"></svg>
+                        <svg id="first-bar-graph2-svg" width="900" height="340"></svg>
+                 </div>
+                 
+                 <div id="frame-line3"></div>
+                   <div class="title-4">
+                      <div class="title-4-img"><img src="./images/title_img.png"/></div>
+                      <p class="title-4-text">치주질환 자가진단을 해볼까요?</p>
+                  </div>
+                 
+                  
+                 <div id="title-4-content">
+                 <div id="title-4-left">
+                      <p class="icon_p">이를 닦을 때 잇몸에서 피가 나온다<br>
+                      이 사이에 음식물이 자주 낀다<br>
+                      치아에 치석이 있는 것 같다<br>
+                      나쁜 입냄새가 난다<br>
+                      잇몸에 통증을 가끔 느낀다<br>
+                      이가 시린 적 있다</p>
+                      
+                      <div id="icon" class="icon1"></div>
+                      <div id="icon" class="icon2"></div>
+                      <div id="icon" class="icon3"></div>
+                      <div id="icon" class="icon4"></div>
+                      <div id="icon" class="icon5"></div>
+                      <div id="icon" class="icon6"></div>
+                 </div>
+                 <div id="title-4-right">
+                      <p class="icon2_p">이가 조금씩 흔들리는 곳이 있다<br>
+                      잇몸이 자주 붓는다<br>
+                      부모님 중에 틀니 하신 분이 있다<br>
+                      피곤하면 이가 들뜬다<br>
+                      당뇨병으로 치료한 적이 있다<br>
+                      현재 담배를 피고 있다</p>
+                       <div id="icon2" class="icon7"></div>
+                      <div id="icon2" class="icon8"></div>
+                      <div id="icon2" class="icon9"></div>
+                      <div id="icon2" class="icon10"></div>
+                      <div id="icon2" class="icon11"></div>
+                      <div id="icon2" class="icon12"></div>
+                 </div>
+                </div>
+                 <div class="last-box"><img src="./images/last-box.png"/></div>
+                 <div class="last-box-frame">
+                         <ul2 class="last-box-1">
+                             <li2>0 - 25</li2>
+                             <li2>26 - 50</li2>
+                             <li2>51 - 75</li2>
+                             <li2>76 - 100</li2>
+                         </ul2>
+                          <ul3 class="last-box-2">
+                             <li3>건강한 편</li3>
+                             <li3>적극적 관리가 필요</li3>
+                             <li3>적극적 치료가 필요</li3>
+                             <li3>중증의 치주질환</li3>
+                         </ul3>
+                   </div>
+             </div>
+          </div>
+         
+         
+      
+            <footer>
+                <div class="footer-1">
+                    <div class="footer-logo"><img src="./images/footer_logo.png"/></div>
+                    <div id="sns">
+                        <div id="sns1">
+                           <img src="./images/sns 1.png">
+                        </div>
+                        <div id="sns2">
+                           <img src="./images/sns 2.png">
+                        </div>
+                        <div id="sns3">
+                           <img src="./images/sns 3.png">
+                        </div>
+                        <div id="sns4">
+                           <img src="./images/sns 4.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-2">
+                <p class="footer-2-1">CONTACT - smh970@naver.com</p>
+                <p class="footer-2-2">Copyright 2017 SEUNGMI Company. All Rights Reserved.</p>
+                </div>
+            </footer> 
+                 
+
+             
+             
+             
+    
+         
+         <!--Script Import -->
+         <script src="./script.js"></script>
+     </body>
+</html>
+     
